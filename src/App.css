@@ -1,0 +1,48 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+background: #3e65fe ;
+}
+
+/* .logo-box {
+    background: #fff ;
+    padding: 30px 120px;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.logo{
+    width: 30px;
+    margin-bottom: 25px;
+}
+
+.logo-box h2 {
+    margin-bottom: 20px;
+}
+
+.box-form input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #999;
+    outline: 0;
+    padding: 15px 10px ;
+    border-radius: 4px;
+}
+
+.box-form p {
+    text-align: right;
+}
+
+.box-form h3{
+    margin: 30px 20px;
+    font-size: 16px;
+} */

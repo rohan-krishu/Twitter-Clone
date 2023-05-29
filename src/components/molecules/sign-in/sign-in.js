@@ -12,14 +12,14 @@ import { useState } from "react";
 export default function SignInPage(){
 
     const[input,setInput] =useState( )
-    const[data,setData] =useState()
+    
 
     function handleEvent(event){
         setInput(event.target.value)
 
     }
     function handleClick(){
-     console.log(setInput)
+     
     }
 
 
@@ -35,6 +35,8 @@ export default function SignInPage(){
        <button className={styles.apple_btn}><BsApple/> Sign in with Apple</button>
      
         <br/>
+        <hr></hr>
+        <span>or</span>
        <p className={styles.line}>.........................or.........................</p>
        <br/>
                 <input type="text"
