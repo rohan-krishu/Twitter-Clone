@@ -1,24 +1,11 @@
 import styles from "./SignIn.module.css"
+import { Link } from "react-router-dom";
 import { BsTwitter } from 'react-icons/bs';
 import { FcGoogle } from 'react-icons/fc';
 import { BsApple } from 'react-icons/bs';
-import { useState } from "react";
 
 
 export default function SignInPage(){
-
-    const[input,setInput] =useState( )
-    
-
-    function handleEvent(event){
-        setInput(event.target.value)
-
-    }
-    function handleClick(){
-     
-    }
-
-
 
     return (
     <div className={styles.main_container}>
@@ -39,27 +26,24 @@ export default function SignInPage(){
                 <input type="text"
                 className={styles.input_style} 
                 placeholder="Phone ,email , or username"
-                onChange={handleEvent}
+                
                 />
-      
-       <br/>
+
              <button 
              className={styles.next_btn}
-            onClick={handleClick}
+           
             >
              Next
              </button>
        <br/>
              <button className={styles.forget_btn}>Forget password?</button>
-       <br/>
+    <br/>
 
        <h2>Don't have an account ?</h2>
+       <Link to={'/sign-up'}>Create Account</Link>
        <br/>
        <br/>
        
-
     </div>
-    
-
     )
 }
