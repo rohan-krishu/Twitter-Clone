@@ -24,16 +24,17 @@ export default function SignInPage(){
     <div className={styles.main_container}>
 
        <BsTwitter className={styles.twitterIcon}/>
+            <br/>
        <p className={styles.sign_heading}>Sign in to Twitter</p>
+            <br/>
        <button className={styles.google_btn}><FcGoogle/> Sign in with Google</button>
-       <br/>
-       <br/>
+            <br/>
+       
        <button className={styles.apple_btn}><BsApple/> Sign in with Apple</button>
      
-        <br/>
-        <hr></hr>
-        <span>or</span>
-       <p className={styles.line}>.........................or.........................</p>
+            <br/>
+        
+       <p className={styles.line}>......................or.......................</p>
        <br/>
                 <input type="text"
                 className={styles.input_style} 
