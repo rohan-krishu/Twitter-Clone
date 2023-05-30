@@ -1,49 +1,73 @@
 import styles from "./SignIn.module.css"
-import { Link } from "react-router-dom";
 import { BsTwitter } from 'react-icons/bs';
 import { FcGoogle } from 'react-icons/fc';
 import { BsApple } from 'react-icons/bs';
+import { useDispatch,useSelector } from 'react-redux'
+import { setPhone } from "../Store/authSlice";
 
+export default function SignInPage() {
 
-export default function SignInPage(){
-
-    return (
-    <div className={styles.main_container}>
-
-       <BsTwitter className={styles.twitterIcon}/>
-            <br/>
-       <p className={styles.sign_heading}>Sign in to Twitter</p>
-            <br/>
-       <button className={styles.google_btn}><FcGoogle/> Sign in with Google</button>
-            <br/>
-       
-       <button className={styles.apple_btn}><BsApple/> Sign in with Apple</button>
+     const dispatch = useDispatch()
+     const { phone} = useSelector(state=>state.auth)
      
-            <br/>
-        
-       <p className={styles.line}>......................or.......................</p>
-       <br/>
-                <input type="text"
-                className={styles.input_style} 
-                placeholder="Phone ,email , or username"
-                
-                />
+     function handleChange(e){
+          dispatch(setPhone(e.target.value))
+     }
+    
+     function handleClick() {
+        const RegisData =  JSON.parse(localStorage.getItem("RegisData"))
 
-             <button 
-             className={styles.next_btn}
-           
-            >
-             Next
-             </button>
-       <br/>
-             <button className={styles.forget_btn}>Forget password?</button>
-    <br/>
+          if(phone !== phone){
+               alert("Enter Right Number")
+          }else{
+               alert("success")
+               
+          }
+     }
 
-       <h2>Don't have an account ?</h2>
-       <Link to={'/sign-up'}>Create Account</Link>
-       <br/>
-       <br/>
-       
-    </div>
-    )
+
+     return (
+
+          <div className={styles.main_container}>
+
+               <BsTwitter className={styles.twitterIcon} />
+               <br />
+               <p className={styles.sign_heading}>Sign in to Twitter</p>
+               <br />
+               <button className={styles.google_btn}><FcGoogle /> Sign in with Google</button>
+               <br />
+
+               <button className={styles.apple_btn}><BsApple /> Sign in with Apple</button>
+
+               <br />
+
+               <p className={styles.line}>......................or.......................</p>
+               <br />
+               <input type="text"
+                    className={styles.input_style}
+                    placeholder="Phone ,email , or username"
+                    onChange={handleChange}
+                    value={phone}
+               />
+
+               <br />
+               <button
+                    className={styles.next_btn}
+                    onClick={handleClick}
+               >
+                    Next
+               </button>
+               <br />
+               <button className={styles.forget_btn}>Forget password?</button>
+               <br />
+
+               <h2>Don't have an account ?</h2>
+               <br />
+               <br />
+
+
+          </div>
+
+
+     )
 }
