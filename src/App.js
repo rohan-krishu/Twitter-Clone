@@ -1,17 +1,17 @@
-import Home from "./Components/pages/Home/Home";
-import Login from "./Components/pages/Login/Login";
-import Registration from "./Components/pages/Registration/Registration";
-import { Route, Routes } from 'react-router-dom'
-import ProtectedRoutes from "./Components/ProtectedRoutes";
+import { Routes, Route } from 'react-router-dom'
+import Home from './Components/pages/Home/Home';
+import SignInPage from './Components/SignIn/SignIn';
+import GotoSignUp from './Components/GotoSignUp/GotoSignUp';
+import SignUpPage from './Components/Register/SignUpPage';
+
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route element={<ProtectedRoutes />}>
-          <Route path="/" element={<Home />} />
-        </Route>
-        <Route path="/sign-up" element={<Registration />} />
-        <Route path="/sign-in" element={<Login />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/sign-in' element={<SignInPage />} />
+        <Route path='/enter-page' element={<GotoSignUp />} />
+        <Route path='/sign-up' element={<SignUpPage />} />
       </Routes>
     </div>
   );
