@@ -3,26 +3,32 @@ import { BsTwitter } from 'react-icons/bs';
 import { FcGoogle } from 'react-icons/fc';
 import { BsApple } from 'react-icons/bs';
 import { useDispatch,useSelector } from 'react-redux'
-import { setPhone } from "../Store/authSlice";
+import { setPhone } from "../../Store/authSlice";
+import { useNavigate } from "react-router-dom";
 
 export default function SignInPage() {
 
      const dispatch = useDispatch()
+     const navigate = useNavigate()
      const { phone} = useSelector(state=>state.auth)
+
      
      function handleChange(e){
           dispatch(setPhone(e.target.value))
      }
     
      function handleClick() {
-        const RegisData =  JSON.parse(localStorage.getItem("RegisData"))
+        const RegisData =  JSON.parse(localStorage.getItem("userData"))
 
-          if(phone !== phone){
-               alert("Enter Right Number")
-          }else{
-               alert("success")
-               
-          }
+        const userData =  RegisData.find(item=>(item.phone == phone))
+
+        if(userData){
+          alert("Sucees")
+          navigate('/')
+          
+        }else{
+          alert("fail")
+        }
      }
 
 
