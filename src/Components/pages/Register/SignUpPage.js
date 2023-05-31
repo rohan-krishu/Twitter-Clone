@@ -18,10 +18,14 @@ function SignUpPage() {
 
   //dispatch data to authSlice
   const dispatch = useDispatch()
+ 
 
+  //function to toggle Input Field
   function toggleFunction() {
     setUseEmail(!useEmail)
   }
+
+
   //function to get userData
   function submitSignUpData(e) {
     e.preventDefault()
@@ -34,6 +38,17 @@ function SignUpPage() {
       date
     }
 
+    //Validation
+    // let nameRegex = /^[a-zA-Z- ]+$/g;
+    // let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/g;
+    // let phoneRegex = /^(\+\d{1,3}[- ]?)?\d{10}$/g;
+
+
+    // if(!nameRegex.test(userName)){
+    //   alert("Enter Correct Name")
+    // }else if
+
+    //storing data to local Storage
     const storeData = localStorage.getItem("userData")
     let newData = []
     if (storeData) {
@@ -101,7 +116,7 @@ function SignUpPage() {
             <p>This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</p>
 
           </div>
-          
+
           <TextField
             className="outlined-basic"
             label="Date"

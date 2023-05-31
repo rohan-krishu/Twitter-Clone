@@ -5,15 +5,20 @@ import styles from './Home.module.css'
 import AddTweet from './HomePages/AddTweetSection/AddTweet'
 export default function Home() {
   return (
-    <div className={styles.CenterSection}>
-       <AddTweet/>
+    <div className={styles.combinedSection}>
+
+      <div className={styles.CenterSection}>
+        {/* <AddTweet /> */}
+      </div>
       <div className={styles.RightSection}>
         <SearchBar />
         <div className={styles.whatsHappening}>
           <WhatsHappening />
         </div>
       </div>
-     
+
+
     </div>
+
   )
 }
