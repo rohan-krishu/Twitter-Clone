@@ -6,7 +6,10 @@ import AddTweet from './HomePages/AddTweetSection/AddTweet'
 export default function Home() {
   return (
     <div className={styles.combinedSection}>
-
+      <div className={styles.leftSection}>
+        {/* Rohan call here */}
+        
+      </div>
       <div className={styles.CenterSection}>
         {/* <AddTweet /> */}
       </div>
