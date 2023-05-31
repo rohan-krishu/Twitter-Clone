@@ -8,21 +8,30 @@ body{
     box-sizing: border-box;
 }
 .twitter_icon{
-    font-size: 55px;
-    color: #437ff9;
+    color: #3e65fe;
+    height: 40px;
+    width: 40px;
 }
 
 .logo-box {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 0.7px;
     border: 1px solid gray;
     border-radius: 20px;
     padding: 1% 10% 1% 10%;
-
     background-color: white;
     box-shadow: whitesmoke;
+    min-height: 650px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo{
@@ -30,47 +39,19 @@ body{
     margin-bottom: 25px;
 }
 
+.outlined-basic{
+    width: 450px;
+    padding: 10px;
+}
 .logo-box h2 {
     margin-bottom: 20px;
 }
 
-.logo-box button {
-    width: 360px;
-    padding: 10px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0px;
-    border-radius: 30px;
-    background-color: 1px solid black;
-    font-weight: 800;
-    cursor: pointer;
-}
-
-.logo-box button img {
-    width: 30px;
-    margin-right: 10px;
-}
-
-.logo-box span {
-    display: block;
-    width: 40px;
-    margin: auto;
-    background: #fff;
-    font-size: 14px;
-    margin-top: -12px;
-}
-
-.logo-box p {
-text-align: left;
-}
 
 .accCreate {
     margin-top: 30px;
     font-weight: 800;
 }
-
-
 
 .box-form input {
     width: 100%;
@@ -79,4 +60,24 @@ text-align: left;
     outline: 0;
     padding: 15px 10px ;
     border-radius: 4px;
+}
+
+.navigate-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.next{
+    background-color: black;
+    color: white;
+    list-style: none;
+    font-size: 20px;
+}
+
+.toggleLink{
+    margin-left: 190px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #147b9d;
 }
