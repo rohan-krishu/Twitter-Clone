@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
 import Home from './Components/pages/Home/Home';
-import GotoSignUp from './Components/GotoSignUp/GotoSignUp';
-import SignUpPage from './Components/Register/SignUpPage';
-import SignInPage from './Components/SignIn/SignIn';
+import GotoSignUp from './Components/pages/GotoSignUp/GotoSignUp';
+import SignUpPage from './Components/pages/Register/SignUpPage';
+import SignInPage from './Components/pages/SignIn/SignIn';
 import { store } from './Components/Store/store';
 import { Provider } from 'react-redux';
 
@@ -17,7 +17,6 @@ function App() {
           <Route path='/sign-up' element={<SignUpPage />} />
         </Routes>
       </Provider>
-
     </div>
   );
 }

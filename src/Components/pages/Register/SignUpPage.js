@@ -5,12 +5,10 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux'
 // import { addtoStorage } from "../Store/authSlice";
-import { setDate, setPhone, setEmail, setUserName } from '../Store/authSlice'
+import { setDate, setPhone, setEmail, setUserName } from '../../Store/authSlice'
 
 
 function SignUpPage() {
-
-  
   //state for using navigate to pages
   const navigate = useNavigate()
 
