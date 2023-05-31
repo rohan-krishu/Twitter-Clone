@@ -4,7 +4,7 @@ import { BsTwitter } from 'react-icons/bs';
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux'
-// import { addtoStorage } from "../Store/authSlice";
+import TextField from '@mui/material/TextField';
 import { setDate, setPhone, setEmail, setUserName } from '../../Store/authSlice'
 
 
@@ -47,20 +47,26 @@ function SignUpPage() {
 
         <BsTwitter className="twitter_icon" />
 
-        <h2>Join Twitter today</h2>
+        <h2>Create Your Account</h2>
 
         <form className="box-form">
-          <input
+
+          <TextField
+            className="outlined-basic"
+            label="UserName"
+            variant="outlined"
             type="text"
-            placeholder="Username"
             onChange={(e) => dispatch(setUserName(e.target.value))}
             value={userName}
           />
 
           <br /><br /><br />
-          <input
+
+          <TextField
+            className="outlined-basic"
+            label="Phone"
+            variant="outlined"
             type="number"
-            placeholder="Phone"
             onChange={(e) => dispatch(setPhone(e.target.value))}
             value={phone}
           />
@@ -77,6 +83,10 @@ function SignUpPage() {
 
           <h3>Date of birth</h3>
           <p>This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</p>
+{/* 
+          <TextField
+
+          /> */}
           <input
             type="date"
             placeholder="DOB"
@@ -84,9 +94,9 @@ function SignUpPage() {
             value={date}
           />
 
-          <Link to={'/sign-in'} onClick={submitSignUpData}><button>Next</button></Link>
-
-
+          <div className="navigate-button">
+          <Link to={'/sign-in'} onClick={submitSignUpData}><button className="next">Next</button></Link>
+          </div>
         </form>
 
       </div>
