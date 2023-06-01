@@ -1,15 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-background: #3e65fe ;
-}
-
 .logo-box {
-    background: #fff ;
+    background: #fff;
     padding: 30px 120px;
     width: 600px;
     position: absolute;
@@ -20,13 +10,15 @@ background: #3e65fe ;
     text-align: center;
 }
 
-.logo{
+.logo {
     width: 30px;
     margin-bottom: 25px;
 }
 
 .logo-box h2 {
-    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
 }
 
 .logo-box button {
@@ -37,30 +29,67 @@ background: #3e65fe ;
     justify-content: center;
     margin: 20px 0px;
     border-radius: 30px;
-    background-color: 1px solid black;
-    font-weight: 800;
     cursor: pointer;
 }
 
-.logo-box button img {
-    width: 30px;
-    margin-right: 10px;
+
+.logo-box button.icon-text {
+    font-size: 19px;
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-weight: normal; /* Remove the boldness */
 }
 
-.logo-box span {
-    display: block;
-    width: 40px;
-    margin: auto;
-    background: #fff;
-    font-size: 14px;
-    margin-top: -12px;
+
+.icon-text {
+    font-size: 19px;
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
 }
 
 .logo-box p {
-text-align: left;
+    text-align: left;
 }
 
 .accCreate {
     margin-top: 30px;
-    font-weight: 800;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.twitter-logo {
+    color: #3e65fe;
+    height: 40px;
+    width: 40px;
+}
+
+.google-icon {
+    height: 25px;
+    width: 25px;
+
+}
+
+.apple-icon {
+    height: 25px;
+    width: 25px;
+
+}
+
+.create-account {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: normal; /* Remove the boldness */
+    
+}
+
+.account-creation{
+    background-color: black;
+}
+
+.gotoLink{
+    color: #3e65fe;
+    text-decoration: none;
 }

@@ -1,67 +1,168 @@
 body{
     background-color: #e6ecf0;
 }
-.main_container{
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.7rem;
+    justify-content: center;
     border: 1px solid gray;
     border-radius: 20px;
     margin: 5% 27% 5% 27%;
     background-color: white;
-    box-shadow: whitesmoke;
-    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    min-width: 750px;
+    min-height: 650px;
 
 }
-.twitterIcon{
-    font-size: 70px;
-    color:#437ff9;
+
+.twitterIcon {
+    height: 40px;
+    width: 40px;
+    color: #437ff9;
+    
 }
-.sign_heading{
-    font-size: 2.9rem;
+
+.sign_heading {
+    font-size: 35px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
 }
-.google_btn{
-    font-size: 140%;
-    padding:1% 9% 1% 9% ;
+
+.google_btn,
+.apple_btn {
+    font-size: 20px;
+    padding: 10px 30px;
     border-radius: 30px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.apple_btn{
-    font-size: 140%;
-    padding:1% 10% 1% 10% ;
-    border-radius: 30px;
-   
+
+.google_btn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    width: 400px;
+
 }
-.line{
-    font-size: 30px;
+
+.apple_btn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    width: 400px;
 }
-.input_style{
-    padding: 2% 12% 2% 1%;
-    font-size: 1.4rem;
+
+.line {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.input_style {
+    padding: 10px 20px;
+    font-size: 18px;
     border-radius: 5px;
+    margin-top: 20px;
+    width: 400px;
+    height: 80px;
+    font-size: 25px;
+    box-sizing: border-box;
+    /* Include padding and border in the width calculation */
 }
-.next_btn{
-    color:white;
-    font-size: 1.5rem;
-    background-color: black;
-    padding:1% 20% 1% 20% ;
-    border-radius: 35px; 
+
+
+.next_btn {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    background-color: #000000;
+    width: 400px;
+    padding: 10px 40px;
+    border-radius: 35px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.forget_btn{
-    font-size: 1.3rem;
-    padding:1% 12% 1% 12% ;
-    border-radius: 35px; 
+
+/* .next_btn:hover {
+    background-color: #0c87e8;
+  } */
+
+.forget_btn {
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 35px;
     font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+    border: none;
+    width: 400px;
+    border: 1px solid black;
 }
-/* .signup.text{
-    font-size: 30px;
-} */
+
+.forget_btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.noAccount {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    /* Remove list styling */
+    margin: 0;
+    padding: 0;
+}
 
 
+@media screen and (max-width: 600px) {
+    .main_container {
+        margin: 5% 10%;
+    }
 
+    .sign_heading {
+        font-size: 30px;
+    }
 
+    .google_btn,
+    .apple_btn {
+        font-size: 16px;
+        padding: 8px 24px;
+    }
 
+    .line {
+        font-size: 20px;
+    }
 
+    .input_style {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
 
+    .next_btn {
+        font-size: 16px;
+        padding: 8px 24px;
+    }
+
+    .forget_btn {
+        font-size: 16px;
+        padding: 8px 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
