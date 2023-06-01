@@ -1,0 +1,19 @@
+
+.whatsHappening{
+    margin-top: 25px;
+}
+
+.RightSection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.combinedSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
