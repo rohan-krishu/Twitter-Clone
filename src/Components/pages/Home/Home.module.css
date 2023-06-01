@@ -1,3 +1,8 @@
+.CenterSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .whatsHappening{
     margin-top: 25px;
@@ -17,3 +22,12 @@
     justify-content: center;
     width:100%;
 }
+
+/* .home {
+    height: 100vh;
+    display: flex;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+} */
