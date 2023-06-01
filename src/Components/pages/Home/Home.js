@@ -1,3 +1,4 @@
+import './Home.module.css'
 import React from 'react'
 import WhatsHappening from './HomePages/WhatsHappening/WhatsHappening'
 import SearchBar from './HomePages/SearchBar/SearchBar'
@@ -6,10 +7,17 @@ import styles from './Home.module.css'
 //import AddTweet from './HomePages/AddTweetSection/AddTweet'
 export default function Home() {
   return (
-    <div className={styles.combinedSection}>
+    <div className={styles.combinedSection} >
+      <div className= {styles.leftSection}>
+       <Sidebar/>
+      </div>
+      
 
       <div className={styles.CenterSection}>
-        {/* <AddTweet /> */}
+        <AddTweet />
+        Helllo Twitter i making
+        
+        {/* Suraj Call Here */}
       </div>
       <div className={styles.RightSection}>
         <SearchBar />
@@ -18,8 +26,7 @@ export default function Home() {
           
         </div>
       </div>
-
-
+     
     </div>
 
   )
