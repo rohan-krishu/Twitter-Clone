@@ -81,3 +81,37 @@ body{
     text-decoration: none;
     color: #147b9d;
 }
+
+.errorMessage{
+    color: rgb(255, 96, 96);
+    font-size: 18px;
+    margin-top: 8px;
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.datePicker{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    width: 100%;
+    
+}
+
+.pickDate{
+    width: 80px;
+}
+
+.pickMonth{
+    width: 200px;
+}
+
+.pickYear{
+    width: 100px;
+}
+
+.alreadyMember{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,24 +1,24 @@
 .sidebar {
-  border-right: 1px solid #e6ecf0;
-  flex: 0.3;
-  min-width: 250px;
-  margin-left: 25px;
-  margin-right: 75%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 85vh;
-  padding-left: 6%;
-  width: 30%;
-  font-size: 35px; 
-
+  width: 50%;
+  font-size: 35px;
+  margin-left: 50px; 
 }
 
+
+.twitter-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 .sidebar__twitterIcon {
   color: #50b7f5;
-  font-size: 45px ;
-  margin: 10px 20px;
-  margin-bottom: 20px;
+  height: 45px;
+  width: 45px;
+ 
 }
 
 .sidebarOption {
@@ -41,6 +41,5 @@
   border-radius: 30px !important;
   height: 50px !important;
   margin-top: 20px !important;
-  width: 90% !important;
 }
 

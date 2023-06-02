@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { useState } from 'react'
 
 // const initialState = false
 
@@ -10,28 +9,39 @@ const authSlice = createSlice({
         userName: '',
         phone: '',
         email: '',
-        date: '',
+        month: '',
+        day:'',
+        year:''
     }, //initialValue
 
     reducers: {  //settlerFunction
         setUserName: ((state, action) => {
             state.userName = action.payload
+            
         }),
         setPhone: ((state, action) => {
             state.phone = action.payload
+            
         }),
         setEmail: ((state, action) => {
             state.email = action.payload
+            
         }),
-        setDate: ((state, action) => {
-            state.date = action.payload
+        setDay: ((state, action) => {
+            state.day = action.payload
+        }),
+        setMonth: ((state, action) => {
+            state.month = action.payload
+        }),
+        setYear: ((state, action) => {
+            state.year = action.payload
         }),
 
     }
 })
 
-const { setDate, setPhone, setEmail, setUserName } = authSlice.actions
+const { setDay, setPhone, setEmail, setUserName, setMonth, setYear } = authSlice.actions
 
 export default authSlice.reducer
 
-export { setDate, setPhone, setEmail, setUserName } 
+export { setDay, setPhone, setEmail, setUserName, setMonth, setYear } 

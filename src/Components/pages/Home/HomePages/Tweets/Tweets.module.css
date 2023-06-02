@@ -1,70 +1,76 @@
-.main_container{
+.main_container {
     background-color: white;
     border: 1px solid whitesmoke;
-    margin: 0% 25% 0% 25%;
-    box-shadow: gray;
-
+    
 }
-.oneTweet_container{
+.main_container:hover{
+    box-shadow: gray; 
+    transition: 0.3s all ease;
+}
+
+.oneTweet_container {
     border: 1px solid lightgray;
+    
 }
 
 .oneTweet_container:hover {
     background-color: whitesmoke;
-  }
-
-.user_style{
-    display: flex;
 }
-.userImage_style{
+
+.user_style {
+    display: flex;
+    width: 100%;
+}
+
+.userImage_style {
     border-radius: 50%;
     height: 8%;
     width: 8%;
     margin: 3% 0% 0% 2%;
 }
-.name_style{
+
+.name_style {
     font-size: 1.4rem;
     font-family: Arial Helvetica, sans-serif;
     font-weight: bold;
     padding: 5% 0% 0% 2%;
 }
-.userName_style{
+
+.userName_style {
     padding-left: 5%;
     font-family: sans-serif;
     color: gray;
     font-weight: lighter;
     font-size: 90%;
-
 }
-.more_style{
+
+.more_style {
     margin-left: 60%;
     font-size: 35px;
     border-radius: 50%;
 }
 
-.tweet_container{
+.tweet_container {
     margin-left: 15%;
-
 }
-.content_style{
-    
+
+.content_style {
     padding: 0% 5% 2% 0%;
     font-size: 1.3rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.img_style{
+.img_style {
     border: 2px solid transparent;
     border-radius: 20px;
     height: 95%;
     width: 95%;
     box-shadow: whitesmoke;
-    
-          }
-.icons_style{
+}
+
+.icons_style {
     display: flex;
     margin: 2% 5% 2% 15%;
     font-size: 1.7rem;
     justify-content: space-between;
-    
 }
