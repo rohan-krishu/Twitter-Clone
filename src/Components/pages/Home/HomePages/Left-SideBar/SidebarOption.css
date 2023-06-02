@@ -4,16 +4,16 @@
   cursor: pointer;
 }
 
+.texts{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 2px;
+}
+
 .sidebarOption:hover {
   background-color: #e8f5fe;
   border-radius: 30px;
   color: var(--twitter-color);
   transition: color 100ms ease-in;
-}
-
-.sidebarOption > .MuiSvgIcon-root {
-  padding: 15px;
-  font-size: 30px !important;
 }
 
 .sidebarOption > h2 {

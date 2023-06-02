@@ -7,6 +7,12 @@ body{
     height: 650px;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
+    top: 0;
+    position: sticky;
+    font-size: 18px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
 }
 
 .sectionHeading{

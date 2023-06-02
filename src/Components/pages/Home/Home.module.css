@@ -1,33 +1,29 @@
-.CenterSection{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
 }
 
-.whatsHappening{
-    margin-top: 25px;
+.leftSection {
+  flex: 0.3;
+  /* background-color: white; */
 }
 
-.RightSection{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin-top: 50px;
+.centerSection {
+  flex: 0.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+.rightSection {
+  flex: 0.3;
+  /* background-color: white; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-.combinedSection{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:100%;
-}
-
-/* .home {
-    height: 100vh;
-    display: flex;
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 10px;
-} */
