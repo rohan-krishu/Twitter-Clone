@@ -10,20 +10,36 @@ import { GoLocation } from 'react-icons/go'
 
 // BiPoll
 export default function AddTweet() {
-    return (
-        <div>
+    return (<>
+              
             <div className={styles.container}>
-                <div>
-                    <input placeholder='What is happening?!' className={styles.inputField} />
-                </div>
-                <div className={styles.bottomField}>
-                    <FaRegSmile className={styles.icons}/>
-                    <FaRegImages className={styles.icons}/>
-                    <AiOutlineFileGif className={styles.icons}/>
-                    <BiPoll className={styles.icons}/>
-                    <GoLocation className={styles.icons}/>
-                </div>
+            <div className={styles.head_style}>
+                  <h1>Home</h1> <br/>
+                <h3>For you</h3> <br/>
+                <h3>Following</h3>
+                
+              </div>
+                   <div className={styles.user_style}>
+                       <img src="https://i.pravatar.cc/150?img=31" 
+                            className={styles.useImage_style}/>
+                        <input placeholder='What is happening?!' className={styles.inputField} />
+                   </div>
+                    <br/> 
+                    
+                           <div className={styles.bottomField}>
+                              <FaRegSmile className={styles.icons}/>
+                              <FaRegImages className={styles.icons}/>
+                              <AiOutlineFileGif className={styles.icons}/>
+                              <BiPoll className={styles.icons}/>
+                              <GoLocation className={styles.icons}/> 
+                              <button className={styles.btn_style}>tweet</button>
+                            </div>
+                           
+                       
             </div>
-        </div>
+            
+                
+        
+        </>
     )
 }

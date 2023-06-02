@@ -1,12 +1,12 @@
 .main_container{
-    background-color: white;
-    border: 1px solid whitesmoke;
-    margin: 0% 25% 0% 25%;
-    box-shadow: gray;
+    
+     background-color: white;
+     
 
 }
 .oneTweet_container{
     border: 1px solid lightgray;
+    overflow: scroll;
 }
 
 .oneTweet_container:hover {

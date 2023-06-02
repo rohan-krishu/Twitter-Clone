@@ -1,25 +1,88 @@
+
+
+.head_style{
+    display: flex;
+    border: 2px solid lightgrey;
+    height: 10%;
+    width: 100%;
+}
+h1{margin: 2%;}
+h3{ 
+     margin-left: 25%;
+    font-size: 1.7rem;
+    padding-top: 5%;
+    color: #2565ae;
+
+}
+
+
 .container{
-    height: 150px;
-    width: 200px;
+    height: 30%;
     background-color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    border: 1px solid lightgrey;
+    
+    
+    
+}
+.container:hover{
+    background-color: whitesmoke;
+}
+.user_style{
+    display: flex;
+}
+.useImage_style{
+    border-radius: 50%;
+    height: 12%;
+    width: 12%;
+    margin: 2% 0% 0% 2%;
 }
 
 .inputField{
     border: none;
-    height: 30px;
+    width: 150%;
+    height: 25%;
+    font-size: 1.5rem;
+    padding: 4% 0% 7% 2%;
     /* background-color: aliceblue; */
 }
+.inputField:hover{
+    background-color: whitesmoke;
+}
+
 
 .bottomField{
     cursor: pointer;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    
+
 }
 
 .icons{
+
     margin-left: 10px;
     margin-top: 10px;
+
     color: rgb(19, 156, 219);
+    font-size: 25px;
+}
+.btn_style{
+    
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #2565ae;
+    color: white;
+    background-color:#2565ae;
+    width: 7.5rem;
+    height: 2.6rem;
+    font-size: 1.4rem
+    
+    
+    
 }

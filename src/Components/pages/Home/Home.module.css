@@ -1,5 +1,5 @@
 
-.whatsHappening{
+/* .whatsHappening{
     margin-top: 25px;
 }
 
@@ -9,11 +9,24 @@
     align-items: flex-end;
     justify-content: flex-end;
     margin-top: 50px;
-}
+} */
 
-.combinedSection{
+/* .combinedSection{
     display: flex;
     align-items: center;
     justify-content: center;
-    width:100%;
+
+} */
+
+
+body{
+    background-color: white;
+    overflow: auto;
+}
+.home_style{
+    display: flex;
+}
+.middleSection_style{
+   overflow: scroll;
+   
 }

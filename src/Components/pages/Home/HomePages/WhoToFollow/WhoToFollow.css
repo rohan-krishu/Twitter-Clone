@@ -1,0 +1,56 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .app {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .who-to-follow {
+    width: 300px;
+    padding: 20px;
+    background-color: #f5f8fa;
+    border-radius: 8px;
+  }
+  
+  .user-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    position:relative;
+  }
+  
+  .user-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  
+  .user-info {
+    flex: 1;
+  }
+  
+  .user-name {
+    margin: 0;
+  }
+  
+  .follow-button,
+  .unfollow-button {
+    padding: 8px 16px;
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .unfollow-button {
+    background-color: #18060c;
+  }
+  
